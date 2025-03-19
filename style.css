@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #dcdcdc;
+}
+
+header {
+    background: linear-gradient(to right, #a6a396, #006c94);
+    color: #EFDCAB;
+    padding: 20px;
+    text-align: center;
+}
+
+#imglogo{
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+#logo{
+    max-width: 250px;
+    border-radius: 48%;
+    border: solid 2.5px #fff1c3;
+    padding: 2px;
+}
+
+#titulo {
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgscont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-block: 70px;
+    background-color: #382816;
+    padding-block: 60px;
+}
+
+#desc{
+    font-size: 1.2rem;
+
+}
+
+.container {
+    width: 910px;
+    max-width: 100%;
+    min-width: 600px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.7s ease; 
+    scroll-snap-type: x mandatory; 
+    scroll-snap-align: center;
+}
+
+.card {
+    background: #443627;
+    min-height: 600px;
+    min-width: 900px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 30px;
+    margin-right: 20px;
+    scroll-snap-align: center;
+    max-height: 600px;
+    max-width: 1000px;
+}
+
+.card img {
+    width: 100%;      
+    height: 100%;      
+    object-fit: cover; 
+    border-radius: 30px; 
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 26%;
+    border-bottom: solid 1px #D98324;
+}
+
+.beneficios ul, .produtos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.beneficios li, .produtos li {
+    margin: 10px 0;
+}
+
+.atendimento{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    margin-inline: 20%;
+    border-bottom: solid 1px #D98324;
+}
+
+.divcdd{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+h4{
+    margin: 8px;
+}
+
+.avaliaçoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 20%;
+    border-bottom: solid 1px #D98324;
+}
+
+.avaliaçoes blockquote {
+    border-left: 4px solid #D98324;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+#avt{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.subtext{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+#btnorç {
+    text-decoration: none;
+    padding-inline: 30px;
+    padding-block: 10px;
+    background-color: #D98324;
+    border-radius: 15px;
+    transition: 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-block: 20px;
+    color: #000000;
+}
+
+#btnorç:hover {
+    background-color: #703f0a;
+    color: #e3eed4;
+}
+
+#containorç {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: #443627;
+    color: #e3eed4;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 25px;
+}
+
+#redes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.rsoc{
+    width: 28px;
+    margin-inline: 16px;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 7%;
+    border-bottom: solid 1px #D98324;
+}
+
+.garantia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#atençao{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.orçamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 10px;
+        max-width: 100%;
+        scroll-snap-align: center;
+        scroll-snap-type: mandatory;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        min-height: 0;
+        margin-block: 30px;
+    }
+
+    .imgscont{
+        height: 80%;
+        align-items: center;
+        display: flex;
+        padding: 0;
+    }
+
+    .beneficios, .avaliaçoes{
+        margin-inline: 3%;
+    }
+
+    .carrossel{
+        min-width: 10px;
+        max-width: 100%;
+        gap: 20px;
+        margin-inline: 4%;
+        height: 80%;
+        align-items: center;
+        display: flex;
+    }
+
+    .container{
+        min-width: 10px;
+        max-width: 100%;
+        height: 80%;
+        align-items: center;
+        display: flex;
+    }
+
+    section {
+        margin-inline: 6%;
+    }
+
+    h1, h2, li, p {
+        text-align: center;
+    }
+
+    #titulo {
+        font-size: 40px;
+    }
+}
+
