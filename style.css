@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #dcdcdc;
+    background: #ffffff;
 }
 
 header {
-    background: linear-gradient(to right, #a6a396, #006c94);
-    color: #EFDCAB;
+    background: linear-gradient(to right, #a6a396, #006c94, #a6a396);
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
